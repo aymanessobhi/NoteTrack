@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .card-text {
+  max-height: 6em; /* set the maximum height to 4 lines */
+  overflow: hidden; /* hide the overflow */
+}
+ .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.page-link {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.page-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.pagination > li > a {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  margin: 0 3px;
+}
